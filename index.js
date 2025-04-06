@@ -1,10 +1,6 @@
-// import postgresql from "pg";
-// import "dotenv/config";
-
 const { pool } = require("pg");
-// require("dotenv/config");
+require("dotenv/config");
 
-// const { Pool, Client } = postgresql;
 const pool = new Pool({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
